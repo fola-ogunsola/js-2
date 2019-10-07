@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>switch case</title>
+</head>
+<body>
+	<p>write football, volleyball, basketball in the input field and click the button</p>
+
+	<p>The switch statement will execute a block of code based on your input.</p>
+
+	<input type="myInput" type="text">
+
+	<button onclick="myFunction">Try it</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction(){
+			var text;
+			var sports =
+			document.getElementById("myInput").value;
+
+			switch(sports) {
+				case "football"
+				  text = "football is good";
+				break;
+				case "volleyball";
+				  text = "i am not a fan!"
+				break;
+				case "basketball";
+				  text = "what do they do there!"
+				break;
+				default:
+				text = "i have no idea ot the next game";
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+     <!-- <script type="" src="script.js"></script> -->
+</body>
+</html>
